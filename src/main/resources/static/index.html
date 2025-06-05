@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>资产管理系统</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="./css/styles.css"  type="text/css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#165DFF',
+            secondary: '#6B7280',
+            success: '#36D399',
+            warning: '#FBBD23',
+            error: '#F87272',
+            info: '#3ABFF8',
+            dark: '#1F2937',
+            light: '#F3F4F6'
+          },
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-inter bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+<!-- 页面内容 -->
+
+<!-- 脚本引入（全部添加 type="module"） -->
+<script type="module" src="js/api.js"></script>
+<script type="module" src="js/utils.js"></script>
+<script type="module" src="js/router.js"></script>
+<script type="module" src="js/components/auth.js"></script>
+<script type="module" src="js/components/assets.js"></script>
+<script type="module" src="js/components/modals.js"></script>
+<script type="module" src="js/components/notifications.js"></script>
+<script type="module" src="js/pages/login.js"></script>
+<script type="module" src="js/pages/register.js"></script>
+<script type="module" src="js/pages/dashboard.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

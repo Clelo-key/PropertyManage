@@ -1,0 +1,55 @@
+/* 基础样式 */
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* 动画过渡 */
+.transition-custom {
+    transition: all 0.3s ease;
+}
+
+/* 卡片阴影 */
+.shadow-card {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* 模态框动画 */
+.modal-content {
+    transition: all 0.3s ease;
+}
+
+/* 加载动画 */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+/* 表格样式 */
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
